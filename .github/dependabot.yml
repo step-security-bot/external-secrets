@@ -10,3 +10,28 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+
+  - package-ecosystem: docker
+    directory: /e2e
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /e2e
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /hack/api-docs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /hack/api-docs
+    schedule:
+      interval: daily
